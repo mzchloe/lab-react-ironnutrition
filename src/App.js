@@ -4,19 +4,16 @@ import React, { useState } from 'react';
 
 function App() {
   const [foodList, setFoodList] = useState(foods);
-/* console.log(foodList) */
 
-  foodList.map((food) => {
-    /* console.log(food) */
-    return (
-      <div className="App">
-      <h1>Food List</h1>
+  return (
+    <div className="App">
+      {foodList.map((food) => (
         <div>
           <p> {food.name} </p>
           <img src={food.image} alt={food.image} width={100} />
         </div>
-      </div>
-    );
-  })
+      ))}
+    </div>
+  );
 }
 export default App;
