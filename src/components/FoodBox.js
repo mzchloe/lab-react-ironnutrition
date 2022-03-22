@@ -10,7 +10,7 @@ export default function FoodBox(props) {
     }
 
   return (
-    <Col span={8}>
+    <Col xs={2} sm={4} md={6} lg={8} xl={10}>
       <Card
         title={props.food.name}
         style={{ width: 230, height: 300, margin: 10, justifyContent: 'left' }}
