@@ -1,7 +1,7 @@
 import './App.css';
 import foods from './foods.json';
 import React, { useState } from 'react';
-import FoodBox from './components/FoodBox/FoodBox';
+import FoodBox from './components/FoodBox';
 import { Card, Col, Button, Row } from 'antd';
 
 function App() {
